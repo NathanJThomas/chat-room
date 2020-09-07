@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UFT-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <link rel="stylesheet" href="css/style.css" />
+       <title>Join Chat</title>
+    </head>
+    <body>
+        <header id="join-header">
+            CHAT
+        </header>
+        <div id="chat-join">
+            <h1>Create/Join Chat Room</h1>
+            <form id="join-form" action="/chat"> 
+                <p class="error">* All fields required</p>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"  placeholder="Username" />
+                <label for="chat-id">Chat Room ID:</label>
+                <input type="text" id="chat-id" name="chat-id" placeholder="Chat Id" />
+                <input type="submit" value="Submit"/>
+            </form>
+        </div>
+
+        <script src="js/login.js" ></script>
+    </body>
+</html>

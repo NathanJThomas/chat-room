@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* chat join page */
+
+#join-header {
+    background-color: darkslategray;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    height: 50px;
+}
+
+#chat-join {
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    max-width: 50%;
+    margin: 30px auto;
+    background-color: whitesmoke;
+    border: 3px solid darkslategray;
+    border-radius: 5px;
+}
+
+#join-form {
+    text-align: left;
+}
+
+
+#join-form label {
+    font-weight: bold;
+}
+
+#join-form input[type="text"] {
+    width: 100%;
+    border: 2px solid darkslategray;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+#join-form input[type="submit"] {
+    width: 100%;
+    background-color: darkslategray;
+    border-radius: 2px;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+#join-form .error {
+    display: none;
+    color: red;
+    font-style: italic;
+}
+
+/* chat page */
+
+#chat-header {
+    background-color: darkslategray;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    height: 50px;
+}
+
+#chat {
+    display: flex;
+    flex-wrap: nowrap;
+    height: calc(100vh - 50px);
+}
+
+
+#sidebar {
+    background-color: darkgray;
+    flex: 1;
+}
+
+.chat-room {
+    width: 90%;
+    margin: 10px auto 0px auto;
+    padding: 5px;
+    border: 2px solid darkslategray;
+    border-radius: 2px;
+    color: whitesmoke;
+}
+
+.chat-room:hover {
+    background-color: dimgray;
+}
+
+.active {
+    font-weight: bold;
+    background-color: darkslategray;
+}
+
+.active:hover {
+    background-color: rgb(42, 69, 69);
+}
+
+#messenger {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid darkslategray;
+}
+
+#messages {
+    flex: auto;
+    overflow-y: auto;
+}
+
+.message {
+    width: 95%;
+    margin: auto;
+    padding: 10px 0px;
+    border-bottom: 1px solid darkgray;
+}
+
+.message-author {
+    font-weight: bold;
+}
+
+#send {
+    flex-basis: 50px;
+    display: flex;
+}
+
+#send input[type="text"] {
+    flex: auto;
+    padding: 10px;
+}
+
+#send input[type="submit"] {
+    flex-basis: 10px;
+    padding: 10px;
+}
